@@ -1,0 +1,16 @@
+{
+  "name": "react-microblog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-fe": "npm --prefix ./frontend start ./frontend",
+    "start-be": "npm --prefix ./backend start ./backend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
